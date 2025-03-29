@@ -3,10 +3,5 @@
     "env": {
       "NODE_VERSION": "18"
     }
-  },
-  "functions": {
-    "**/*.js": {
-      "runtime": "@vercel/node@2"
-    }
   }
 }
