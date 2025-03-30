@@ -2,8 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { playlists } from '../lib/data';
 import Playlistcard from "../components/playlistcard.astro"
-import Hora from '../components/hora.astro';
-import Clima from '../components/clima.astro';
+import Hora from '../components/hora.jsx';
 
 ---
 
@@ -12,8 +11,7 @@ import Clima from '../components/clima.astro';
 class="relative transition-all duration-1000 bg-green-600"
 >
     <div class="relative z-10 px-6 pt-6 ">
-        <Hora/>
-        <Clima/>
+        <Hora client:load/>
         <div class=" flex flex-wrap mt-6 gap-4">
         {
             playlists.map(playlists => <Playlistcard playlists={playlists}/>)
