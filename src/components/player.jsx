@@ -168,7 +168,7 @@ const Songcontrol = ({ audio }) => {
         max={duration} // Usar la duración del estado (guardada en localStorage)
         min={0}
         value={[currentTime]}
-        className="w-[400px] cursor-pointer"
+        className="w-[400px] cursor-pointer slader"
         onValueChange={(value) => {
           audio.current.currentTime = value;
           setCurrentTime(value);  // Actualizamos el tiempo
@@ -301,41 +301,51 @@ export function Player() {
   };
   return (
     <div className="flex flex-row justify-between w-full px-4 z-50">
-      <div className="w-[200px]">
-        <Currentsong {...currentMusic.song} />
-      </div>
-  
-      {/* Contenedor para los controles principales */}
-      <div className="grid place-content-center gap-4 flex-1">
-        <div className="flex justify-center flex-row items-center">
-          
-          {/* Botón de canción anterior con rotación */}
-          <button className="bg-white text-black rounded-full p-2 hover:scale-105  duration-300" onClick={Anteriorsong}>
-          <SiguienteIcon   /> {/* Rotación para "Anterior" */}
-          </button>
-          
-          {/* Botón de Play/Pausa */}
-          <button className="bg-white text-black rounded-full p-2 mx-4 hover:scale-105  duration-300" onClick={clickmusic}>
-            {isPlaying ? <Pause /> : <Play />}
-          </button>
-          
-          {/* Botón de siguiente canción */}
-          <button className="bg-white text-black rounded-full p-2 hover:scale-105 duration-300" onClick={siguientesong}>
-             {/* Aquí colocas tu icono de "Siguiente" */}
-            <AnteriorIcon />
-          </button>
-  
-        </div>
-        {/* Contenedor para la barra de progreso de la canción */}
-        <div className="flex justify-center flex-col items-center">
-          <Songcontrol audio={audioRef} />
-        </div>
-      </div>
-  
-      {/* Control de volumen */}
-      <div className="grid place-content-center">
-        <Volumecontrol />
-      </div>
+      {/* Sección izquierda: Canción actual */}
+  <div className="w-[200px] musica">
+    <Currentsong {...currentMusic.song} />
+  </div>
+
+  {/* Sección central: Controles + Barra de progreso */}
+  <div className="flex flex-col items-center flex-1 gap-2">
+    
+    {/* Controles de música */}
+    <div className="flex justify-center items-center gap-4">
+      {/* Botón de canción anterior */}
+      <button 
+        className="bg-white text-black rounded-full p-2 hover:scale-105 duration-300"
+        onClick={Anteriorsong}
+      >
+        <SiguienteIcon /> {/* Rotado para indicar "Anterior" */}
+      </button>
+
+      {/* Botón de Play/Pausa */}
+      <button 
+        className="bg-white text-black rounded-full p-3 mx-4 hover:scale-105 duration-300"
+        onClick={clickmusic}
+      >
+        {isPlaying ? <Pause /> : <Play />}
+      </button>
+
+      {/* Botón de siguiente canción */}
+      <button 
+        className="bg-white text-black rounded-full p-2 hover:scale-105 duration-300"
+        onClick={siguientesong}
+      >
+        <AnteriorIcon /> {/* Ícono de siguiente */}
+      </button>
+    </div>
+
+    {/* Barra de progreso centrada */}
+    <div className="w-auto max-w-[400px]">
+      <Songcontrol audio={audioRef} />
+    </div>
+  </div>
+
+  {/* Sección derecha: Control de volumen */}
+  <div className="grid place-content-center volumen">
+    <Volumecontrol />
+  </div>
   
       <audio ref={audioRef} />
     </div>

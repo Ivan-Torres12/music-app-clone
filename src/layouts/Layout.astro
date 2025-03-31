@@ -27,15 +27,15 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<div id="app" class="h-screen gap-2 pl-2 pr-2">
-			<header class="  [grid-area:header] grid grid-cols-[1fr_1fr_1fr]">
-				<div  ><Headermenu /></div>
-				<div class="flex items-center ml-7"><Headercenter /></div>
-				<div class="flex items-center justify-end  "><Headerfinal /></div>
+			<header id="header" class="[grid-area:header] grid grid-cols-[1fr_1fr_1fr]">
+				<div class="menu flex items-center" ><Headermenu/></div>
+				<div class="flex items-center headercenter"><Headercenter /></div>
+				<div class="flex items-center justify-end final "><Headerfinal /></div>
 			</header>
-			<aside class=" bg-zinc-800 rounded-lg  [grid-area:aside] flex flex-col overflow-y-auto">
+			<aside class=" bg-zinc-800 rounded-lg  [grid-area:aside] flex flex-col overflow-y-auto asidemenu">
 			  <AsideMenu />
 			</aside>
-			<main class="rounded-lg overflow-y-auto [grid-area:main] ">
+			<main class="rounded-lg overflow-y-auto [grid-area:main] side ">
 			  <slot />
 			</main>
 			<footer class="  [grid-area:player]  ">
@@ -45,16 +45,7 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style>
-	#app{
-		display: grid;
-		grid-template-areas: 
-		"header header header"
-		"aside main main "
-		"player player player"
-		;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 60px 1fr 80px;
-		}
+	
 </style>
 
 <style is:global>
@@ -70,5 +61,145 @@ const { title } = Astro.props;
 	.font-bold-custom {
 	  font-weight: 700; /* Equivalente a bold en Tailwind */
 	}
+	/* Estilos personalizados para mejorar la responsividad del footer */
+	@media (max-width: 750px) {
+		footer {
+			height: 70px; /* Ajustar tamaño en móviles */
+			
+		}
+		.volumen,.musica,.asidemenu,#home,.final{
+			display: none;
+		}
+		.slader{
+			width: 230px;
+		}
+		.side{
+			width: auto;
+		}
+		#app{
+		display: grid;
+		grid-template-areas: 
+		"header header header"
+		"main main main "
+		"player player player"
+		;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 60px 1fr 80px;
+		}
+		.article{
+			width: 140px;
+		}
+		#saludos,#time{
+			font-size: 2rem /* 36px */;
+			line-height: 2.5rem
+		}
+		#center{
+			margin-right: 5px;
+			width: 150px;
+		}
+		#container{
+			justify-content: end;
+		}
+		#menu{
+			width: 70px;
+		}
+}
+@media (max-width: 750px) {
+		footer {
+			height: 70px; /* Ajustar tamaño en móviles */
+		}
+		.volumen,.musica,.asidemenu,.final,#barra,#explorer{
+			display: none;
+		}
+		.slader{
+			width: 230px;
+		}
+		.side{
+			width: auto;
+		}
+		#app{
+		display: grid;
+		grid-template-areas: 
+		"header header header"
+		"main main main "
+		"player player player"
+		;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 60px 1fr 80px;
+		}
+		.article{
+			width: 140px;
+		}
+		#center{
+			
+			margin-right: 20px;
+			width: 260px;
+			
+		}
+		.headercenter{
+			padding: 12px;
+			margin-right: 20px;
+
+		}
+		
+}
+
+	@media (min-width: 750px) and (max-width: 1024px) {
+		footer {
+			height: 70px; /* Ajustar tamaño en pantallas medianas */
+		}
+		.slader{
+			width: 300px;
+		}
+		.article{
+			width: 160px;
+		}
+		.side{
+			width: auto;	
+		}
+		#app{
+		display: grid;
+		grid-template-areas: 
+		"header header header"
+		"aside main main "
+		"player player player"
+		;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 60px 1fr 80px;
+		}
+		#center{
+			padding: 0.75rem /* 12px */;
+			margin-left: 1.5rem /* 16px */;
+		}
+		
+	}
+
+	@media (min-width: 1024px) {
+		footer {
+			height: 80px; /* Ajustar tamaño en pantallas grandes */
+		}
+		.slader{
+			width: 400px;
+		}
+		#app{
+		display: grid;
+		grid-template-areas: 
+		"header header header"
+		"aside main main "
+		"player player player"
+		;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 60px 1fr 80px;
+		}
+		.article{
+			width: 190px;
+		}
+		#center{
+			padding: 0.75rem /* 12px */;
+			margin-left: 1.5rem /* 16px */;
+		}
+		
+	}
   </style>
   
+

@@ -35,7 +35,7 @@ const Clock = () => {
   }, []);
 
   return (
-    <div>
+    <div id="hora">
       <h1 id="saludos" className="text-4xl font-bold text-white">
         {greeting} {sticker}
       </h1>
