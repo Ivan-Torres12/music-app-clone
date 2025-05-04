@@ -1,3 +1,8 @@
+### Aviso legal
+
+Este proyecto es un clon no oficial de Spotify hecho con fines educativos.  
+No estoy afiliado con Spotify, y todos los derechos sobre la marca y el diseño original pertenecen a sus respectivos propietarios.
+
 # Astro Starter Kit: Basics
 
 ```sh
