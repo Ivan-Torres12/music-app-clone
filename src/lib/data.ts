@@ -16,7 +16,7 @@ export const playlists: Playlist[] = [
     title: "Chill Lo-Fi Music",
     color: colors.yellow,
     cover:
-      "https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353",
+      "1.jpg",
     artists: ["NoSpirit", "Casiio"],
   },
   {
@@ -25,7 +25,7 @@ export const playlists: Playlist[] = [
     title: "Lo-Fi Chill Session",
     color: colors.green,
     cover:
-      "https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187",
+      "2.jpg",
     artists: ["Kupla", "Blue Fox"],
   },
   {
@@ -34,7 +34,7 @@ export const playlists: Playlist[] = [
     title: "Study Session",
     color: colors.rose,
     cover:
-      "https://f4.bcbits.com/img/a1435058381_65.jpg",
+      "3.jpg",
     artists: ["Tenno", "xander", "Team Astro"],
   },
   {
@@ -43,7 +43,7 @@ export const playlists: Playlist[] = [
     title: "Blue Note Study Time",
     color: colors.blue,
     cover:
-      "https://f4.bcbits.com/img/a1962013209_16.jpg",
+      "4.jpg",
     artists: ["Raimu", "Yasumu"],
   },
   {
@@ -52,7 +52,7 @@ export const playlists: Playlist[] = [
     title: "Chau Saura Session",
     color: colors.purple,
     cover:
-      "https://f4.bcbits.com/img/a2793859494_16.jpg",
+      "5.jpg",
     artists: ["Chau Saura", "amies", "kyu"],
   },
   {
@@ -61,7 +61,7 @@ export const playlists: Playlist[] = [
     title: "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     color: colors.orange,
     cover:
-      "../music/6/cover.jpg",
+      "jose.jpg",
     artists: ["Jose jose"],
   },
 ];
@@ -97,7 +97,7 @@ export const songs: Song[] = [
     "id": 1,
     "albumId": 1,
     "title": "Moonlit Walk",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
+    "image": `1.jpg`,
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "3:12"
@@ -106,7 +106,7 @@ export const songs: Song[] = [
     "id": 2,
     "albumId": 1,
     "title": "Coffee Daze",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
+    "image": `1.jpg`,
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "4:07"
@@ -115,7 +115,7 @@ export const songs: Song[] = [
     "id": 3,
     "albumId": 1,
     "title": "Skyline Serenade",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
+    "image": `1.jpg`,
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "3:50"
@@ -124,7 +124,7 @@ export const songs: Song[] = [
     "id": 4,
     "albumId": 1,
     "title": "Urban Echoes",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
+    "image": `1.jpg`,
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "3:30"
@@ -133,7 +133,7 @@ export const songs: Song[] = [
     "id": 5,
     "albumId": 1,
     "title": "Night's End",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
+    "image": `1.jpg`,
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "4:20"
@@ -142,7 +142,7 @@ export const songs: Song[] = [
     "id": 1,
     "albumId": 2,
     "title": "Silent Rain",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
+    "image": `2.jpg`,
     "artists": ["Urban Nocturne"],
     "album": "Midnight Tales",
     "duration": "3:40"
@@ -151,7 +151,7 @@ export const songs: Song[] = [
     "id": 2,
     "albumId": 2,
     "title": "Lost Pages",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
+    "image": `2.jpg`,
     "artists": ["Urban Nocturne"],
     "album": "Midnight Tales",
     "duration": "3:20"
@@ -160,7 +160,7 @@ export const songs: Song[] = [
     "id": 3,
     "albumId": 2,
     "title": "Midnight Tales",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
+    "image": `2.jpg`,
     "artists": ["Urban Nocturne"],
     "album": "Midnight Tales",
     "duration": "3:50"
@@ -169,7 +169,7 @@ export const songs: Song[] = [
     "id": 4,
     "albumId": 2,
     "title": "City Lights",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
+    "image": `2.jpg`,
     "artists": ["Urban Nocturne"],
     "album": "Midnight Tales",
     "duration": "3:30"
@@ -178,7 +178,7 @@ export const songs: Song[] = [
     "id": 5,
     "albumId": 2,
     "title": "Night Drive",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
+    "image": `2.jpg`,
     "artists": ["Urban Nocturne"],
     "album": "Midnight Tales",
     "duration": "4:20"
@@ -187,7 +187,7 @@ export const songs: Song[] = [
     "id": 1,
     "albumId": 3,
     "title": "Lunar",
-    "image": `https://f4.bcbits.com/img/a1435058381_65.jpg`,
+    "image": `3.jpg`,
     "artists": ["Tenno"],
     "album": "Study Session",
     "duration": "3:40"
@@ -196,7 +196,7 @@ export const songs: Song[] = [
     "id": 2,
     "albumId": 3,
     "title": "Go go go!",
-    "image": `https://f4.bcbits.com/img/a1435058381_65.jpg`,
+    "image": `3.jpg`,
     "artists": ["Tenno"],
     "album": "Study Session",
     "duration": "3:20"
@@ -205,7 +205,7 @@ export const songs: Song[] = [
     "id": 3,
     "albumId": 3,
     "title": "Keep focus!",
-    "image": `https://f4.bcbits.com/img/a1435058381_65.jpg`,
+    "image": `3.jpg`,
     "artists": ["Tenno"],
     "album": "Study Session",
     "duration": "2:40"
@@ -214,7 +214,7 @@ export const songs: Song[] = [
     "id": 4,
     "albumId": 3,
     "title": "JavaScript is the way",
-    "image": `https://f4.bcbits.com/img/a1435058381_65.jpg`,
+    "image": `3.jpg`,
     "artists": ["Tenno"],
     "album": "Study Session",
     "duration": "3:10"
@@ -223,7 +223,7 @@ export const songs: Song[] = [
     "id": 5,
     "albumId": 3,
     "title": "No more TypeScript for me",
-    "image": `https://f4.bcbits.com/img/a1435058381_65.jpg`,
+    "image": `3.jpg`,
     "artists": ["Tenno"],
     "album": "Study Session",
     "duration": "2:10"
@@ -232,7 +232,7 @@ export const songs: Song[] = [
     "id": 1,
     "albumId": 4,
     "title": "Lunar",
-    "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
+    "image": "4.jpg",
     "artists": ["Tenno"],
     "album": "Study Session",
     "duration": "3:40"
@@ -241,7 +241,7 @@ export const songs: Song[] = [
     "id": 2,
     "albumId": 4,
     "title": "Go go go!",
-    "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
+    "image": "4.jpg",
     "artists": ["Tenno"],
     "album": "Study Session",
     "duration": "3:20"
@@ -250,7 +250,7 @@ export const songs: Song[] = [
     "id": 3,
     "albumId": 4,
     "title": "Keep focus!",
-    "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
+    "image": "4.jpg",
     "artists": ["Tenno"],
     "album": "Study Session",
     "duration": "2:40"
@@ -259,7 +259,7 @@ export const songs: Song[] = [
     "id": 4,
     "albumId": 4,
     "title": "JavaScript is the way",
-    "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
+    "image": "4.jpg",
     "artists": ["Tenno"],
     "album": "Study Session",
     "duration": "3:10"
@@ -268,7 +268,7 @@ export const songs: Song[] = [
     "id": 5,
     "albumId": 4,
     "title": "No more TypeScript for me",
-    "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
+    "image": "4.jpg",
     "artists": ["Tenno"],
     "album": "Study Session",
     "duration": "2:10"
@@ -277,7 +277,7 @@ export const songs: Song[] = [
     "id": 1,
     "albumId": 5,
     "title": "Moonlit Walk",
-    "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
+    "image": "5.jpg",
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "3:12"
@@ -286,7 +286,7 @@ export const songs: Song[] = [
     "id": 2,
     "albumId": 5,
     "title": "Coffee Daze",
-    "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
+    "image": "5.jpg",
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "4:07"
@@ -295,7 +295,7 @@ export const songs: Song[] = [
     "id": 3,
     "albumId": 5,
     "title": "Skyline Serenade",
-    "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
+    "image": "5.jpg",
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "3:50"
@@ -304,7 +304,7 @@ export const songs: Song[] = [
     "id": 4,
     "albumId": 5,
     "title": "Urban Echoes",
-    "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
+    "image": "5.jpg",
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "3:30"
@@ -313,7 +313,7 @@ export const songs: Song[] = [
     "id": 5,
     "albumId": 5,
     "title": "Night's End",
-    "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
+    "image": "5.jpg",
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "4:20"
@@ -322,7 +322,7 @@ export const songs: Song[] = [
     "id": 1,
     "albumId": 6,
     "title": "Alguien Vendra",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "3:53"
@@ -331,7 +331,7 @@ export const songs: Song[] = [
     "id": 2,
     "albumId": 6,
     "title": "Mi Niña",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "3:29"
@@ -340,7 +340,7 @@ export const songs: Song[] = [
     "id": 3,
     "albumId": 6,
     "title": "La Noche De Los Dos",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "2:53"
@@ -349,7 +349,7 @@ export const songs: Song[] = [
     "id": 4,
     "albumId": 6,
     "title": "Llegara",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "2:15"
@@ -358,7 +358,7 @@ export const songs: Song[] = [
     "id": 5,
     "albumId": 6,
     "title": "Dios Es Amor",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "2:45 "
@@ -367,7 +367,7 @@ export const songs: Song[] = [
     "id": 6,
     "albumId": 6,
     "title": "El Triste",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "4:13"
@@ -376,7 +376,7 @@ export const songs: Song[] = [
     "id": 7,
     "albumId": 6,
     "title": "Esa Cancion De Ayer",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "4:13"
@@ -385,7 +385,7 @@ export const songs: Song[] = [
     "id": 8,
     "albumId": 6,
     "title": "Nunca Me Dejes",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "4:13"
@@ -394,7 +394,7 @@ export const songs: Song[] = [
     "id": 9,
     "albumId": 6,
     "title": "Oh Gente!",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "4:13"
@@ -403,7 +403,7 @@ export const songs: Song[] = [
     "id": 10,
     "albumId": 6,
     "title": " Amoras",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "4:13"
@@ -412,7 +412,7 @@ export const songs: Song[] = [
     "id": 11,
     "albumId": 6,
     "title": "A Partir De Hoy",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "4:13"
@@ -421,7 +421,7 @@ export const songs: Song[] = [
     "id": 12,
     "albumId": 6,
     "title": "Dos",
-    "image": "../music/6/cover.jpg",
+    "image": "jose.jpg",
     "artists": ["Jose jose"],
     "album": "1970 - El Triste (RCA Victor–MKLS - 1880, MX)",
     "duration": "4:13"

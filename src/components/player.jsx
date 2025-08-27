@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Slider } from "../components/slider";
 import { usePlayerstore } from "../store/playerstore";
 import { useEffect } from "react";
+import RenderWebp from "./render-wepb";
 
 export const Pause = ({className}) => (
   <svg className={className} width="16px" height="16px" fill="currentColor" viewBox="0 0 16 16">
@@ -58,7 +59,7 @@ const Currentsong = ({title, image,artists}) => {
   return(
     <div className="flex items-center gap-5 relative overflow-hidden">
       <picture>
-        <img className="w-10 h-10 rounded-md bg-zinc-800 shadow-lg overflow-hidden" src={image}/>
+        <RenderWebp className="w-10 h-10 rounded-md bg-zinc-800 shadow-lg overflow-hidden" src={image}/>
       </picture>
       <div className="flex flex-col">
         <h3 className="font-semibold text-sm block text-white">{title}</h3>

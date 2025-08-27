@@ -3,6 +3,7 @@ import Time from "../icons/time.astro";
 import { type Song } from "../lib/data.ts";
 import { List } from "../components/listplayersong";
 import { Songcontrol } from "../components/duracion";
+import RenderWebp from "./render-webp.astro";
 
 interface Props {
   songs: Song[];
@@ -33,7 +34,7 @@ const { songs } = Astro.props;
           <td class="px-2 py-2 w-5">{song.id}</td>
           <td class="px-2 py-2 flex gap-3">
             <picture>
-              <img class="w-10 h-10" src={song.image} alt={song.title} />
+              <RenderWebp Class="w-10 h-10"  src={song.image} alt={song.title} />
             </picture>
             <div class="flex flex-col">
               <h3 class="text-white text-base font-normal">{song.title}</h3>

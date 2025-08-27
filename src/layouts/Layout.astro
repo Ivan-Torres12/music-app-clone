@@ -200,6 +200,19 @@ const { title } = Astro.props;
 		}
 		
 	}
+	.blur-bg {
+  filter: blur(20px);
+  transform: scale(1.1);
+  transition: opacity 1s ease;
+}
+.real-img {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.real-img.visible {
+  opacity: 1;
+}
+
   </style>
   
 

@@ -1,0 +1,77 @@
+---
+interface Props {
+  src?: string;
+  alt?: string;
+  Class?: string;
+  transitionName?: string;
+}
+
+const {
+  src,
+  alt = "",
+  Class = "",
+  transitionName
+} = Astro.props;
+---
+
+<style>
+  .blur-bg {
+    filter: blur(20px);
+    transform: scale(1.1);
+    transition: opacity 1s ease;
+  }
+  .real-img {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  .real-img.visible {
+    opacity: 1;
+  }
+</style>
+
+<img
+  src={`/api/image/${src}?placeholder=true`} 
+  data-src={`/api/image/${src}`}             
+  alt={alt}
+  class={`real-img ${Class}`}
+  loading="eager"
+  decoding="async"
+  transition:name={transitionName}
+  data-reload
+/>
+
+<script>
+  const loadImage = (img: HTMLImageElement) => {
+    const fullSrc = img.dataset.src!;
+    const realImg = new Image();
+    realImg.src = fullSrc;
+
+    realImg.onload = () => {
+      img.src = fullSrc;
+      img.classList.add("visible");
+    };
+  };
+
+  // IntersectionObserver para carga perezosa
+  const imgs = document.querySelectorAll("img[data-src]") as NodeListOf<HTMLImageElement>;
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const img = entry.target as HTMLImageElement;
+        loadImage(img);
+        obs.unobserve(img);
+      }
+    });
+  });
+  imgs.forEach((img) => observer.observe(img));
+
+  // Recargar SOLO las imágenes con data-reload al hacer transición
+  document.addEventListener("astro:after-swap", () => {
+    document.querySelectorAll("img[data-reload]").forEach((img) => {
+      const el = img as HTMLImageElement;
+      el.classList.remove("visible");
+      el.src = el.src.split("?")[0] + "?placeholder=true&t=" + Date.now(); // forzamos recarga placeholder
+      loadImage(el); // volvemos a cargar la imagen final
+    });
+  });
+</script>

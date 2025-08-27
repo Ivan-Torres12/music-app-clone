@@ -1,6 +1,7 @@
 ---
 import type {Playlist} from "../lib/data.ts"
 import { Cardplaybuton } from "./cardplaybuton.jsx";
+import Render from "./render-webp.astro"
 
 interface Props {
     playlists:Playlist;
@@ -19,7 +20,7 @@ class="playlist-item flex transition-all duration-300   relative p-2 overflow-hi
 transition:name=`playlists ${id} box`
 >
 <picture class=" aspect-square w-full h-auto float-none">
-    <img src={cover} class="object-cover w-full h-full rounded-md" alt="" transition:name=`playlists ${id} image`>
+    <Render src={cover}Class="object-cover w-full h-full rounded-md" alt="" transitionName={`playlists ${id} image`}  />
 </picture>
 <div class="flex flex-auto flex-col truncate">
     <h4 class="text-white font-medium text-sm" transition:name=`playlist ${id} title`>
